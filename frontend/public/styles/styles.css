@@ -1,0 +1,133 @@
+:root {
+    --font-size-base: 1rem;
+    --font-size-lg: 1.5rem;
+    --font-size-xl: 2rem;
+    --color-primary: #ff6f61;
+    --color-primary-hover: #ff3b30;
+    --color-bg: #fff;
+    --color-bg-gradient: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    --color-text: #333;
+    --color-text-secondary: #555;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--color-bg-gradient);
+    color: var(--color-text);
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 40rem; /* Limit the width to 640px */
+    padding: 2em;
+    background: var(--color-bg);
+    border-radius: 0.5em;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.logo img {
+    width: 25%;
+    max-width: 6em; /* Limit image size to 96px */
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo h1 {
+    margin: 0.5em 0 0;
+    font-size: var(--font-size-lg);
+    color: var(--color-text);
+}
+
+h2 {
+    font-size: var(--font-size-xl);
+    font-weight: bold;
+    margin: 0.5em 0;
+    color: var(--color-text-secondary);
+}
+
+p {
+    font-size: var(--font-size-base);
+    line-height: 1.5;
+    margin: 1em 0;
+}
+
+.explore-btn {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    font-size: var(--font-size-base);
+    color: white;
+    background: var(--color-primary);
+    border: none;
+    border-radius: 0.3em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.explore-btn:hover {
+    background: var(--color-primary-hover);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 1.5em 0;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+label {
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+}
+
+input {
+    padding: 0.75em;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3em;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: var(--color-primary);
+    outline: none;
+}
+
+button {
+    align-self: center;
+}
+
+p {
+    margin-top: 1em;
+    font-size: 0.9rem;
+}
+
+p a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
